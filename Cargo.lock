@@ -295,19 +295,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "lsp-types"
-version = "0.95.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "158c1911354ef73e8fe42da6b10c0484cb65c7f1007f28022e847706c1ab6984"
-dependencies = [
- "bitflags",
- "serde",
- "serde_json",
- "serde_repr",
- "url",
-]
-
-[[package]]
 name = "memchr"
 version = "2.7.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -433,7 +420,6 @@ name = "pseudo_lsp"
 version = "0.1.0"
 dependencies = [
  "lsp-server",
- "lsp-types 0.95.0",
  "regex",
  "serde_json",
  "tokio",
@@ -683,7 +669,7 @@ dependencies = [
  "dashmap",
  "futures",
  "httparse",
- "lsp-types 0.94.1",
+ "lsp-types",
  "memchr",
  "serde",
  "serde_json",
